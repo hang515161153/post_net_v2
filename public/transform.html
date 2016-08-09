@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transform</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="./transform_css/transform_css.css">
+</head>
+<body>
+<div class="transform">
+    <div class="head"><h2>POST-NET</h2></div>
+    <div class="content">
+        <ul class="content_ul">
+            <li>
+                <span>Input code</span>
+                <input id="code" type="text" placeholder="Please input code here"/>
+            </li>
+            <span class="errorTip" id="errorTip"></span>
+            <li>
+                <span>Result</span>
+                <span class="barcode" id="transformCode"></span>
+            </li>
+            <li>
+                <label> <input class="radio" type="radio" title="barcode" name="barcode" checked="checked"/>Barcode to
+                    Postcode</label>
+                <label><input class="radio" type="radio" title="postcode" name="barcode"/>Postcode to Barcode</label>
+            </li>
+            <li>
+                <button id="submit">OK</button>
+            </li>
+        </ul>
+    </div>
+    <div class="record">
+        <span><h3>History</h3></span>
+        <ul id="historyUl" class="historyUl">
+            <li class="code">Code</li>
+            <li class="code">Result</li>
+        </ul>
+    </div>
+</div>
+<!--<script type="text/javascript" src="js/ajax.js"></script>-->
+<!--<script type="text/javascript" src="js/request_v1.js"></script>-->
+<script type="text/javascript" src="js/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="js/request_v2.js">
+
+
+</script>
+</body>
+</html>
